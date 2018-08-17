@@ -1,0 +1,16 @@
+*{margin: 0;padding: 0;}
+#container{width: 1200px;height: 460px;margin:50px auto;position: relative;}
+#banner{width: 1200px;height: 460px;position: relative;}
+.picSlide{width: 1200px;height: 460px;position: absolute;display: none;}
+.onShowed{display: block;}
+.button{position: absolute;width: 40px;height: 80px;left: 244px;top: 50%;margin-top: -40px;
+	background: url(arrow.png) no-repeat center;}
+.button:hover{background-color: grey;opacity: 0.5;}
+#preSlide{transform: rotate(180deg);}
+#nextSlide{right: 0;left: auto;}
+.choice{position: absolute;right: 50px;bottom: 30px;}
+.choice span{width: 13px;height: 13px;display:inline-block;margin-left:10px;cursor:pointer;
+	border-radius: 50%;background:rgba(7,17,27,0.5);box-shadow: 0 0 0 2px rgba(255,255,255,0.8) inset;}
+	/*注意选择器的权重和优先级。权重：10+1=11*/
+.choice span.pointSelected{box-shadow: 0 0 0 2px rgba(7,17,27,0.5) inset;background: white;}
+/*注意选择器的权重和优先级。权重：10+1+10=21*/
